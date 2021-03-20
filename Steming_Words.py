@@ -1,7 +1,9 @@
+!pip install nltk
 import numpy as np
-from ntlk.stem import PortStemer
+import nltk
+from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
-ps =PortStemer()
+ps =PorterStemmer()
 words =["program","programs","programer","programming","programers"]
-for w in word:
+for w in words:
   print(w,":",ps.stem(w))
